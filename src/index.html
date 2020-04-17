@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Welcome!</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- form to collect user input/selections -->
+      <form type="submit">
+        <label for="user-input">Current Age:</label>
+        <input class="form-control" id="user-input" placeholder="enter your current age">
+        <br>
+        <label for="life-term">How old do you think you'll live to be? </label>
+        <input class="form-control" id="life-term" placeholder="enter a number here">
+        <small class="form-text text-muted">We know it's a little grim, it's just for fun, enter any number you'd like!</small>
+        <br>
+
+        <label for="planet-selection">Select your planet!</label>
+        <select class="form-control" id="user-slection">
+          <option value =" "></option>
+          <option value = "mercury">Mercury</option>
+          <option value = "venus">Venus</option>
+          <option value = "mars">Mars</option>
+          <option value = "jupiter">Jupiter</option>
+        </select>
+        <br>
+        <button type="submit" class="btn btn-dark">Get Your Results!</button>
+        <br>
+      </form>
+      <div id = "output">
+        <!-- results displayed here -->
+      </div>
+    </div>
+  </body>
+</html>
