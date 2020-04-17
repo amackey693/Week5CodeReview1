@@ -27,5 +27,10 @@ describe ("Age", () => {
     newAge.venusCalc();
     expect(newAge.venusAge).toBeGreaterThanOrEqual(42);
   });
+  test ('Age constructor holds values for UserInput and confirms new property marsAge is set to zero', () => {
+    let newAge = new Age (26);
+    expect(newAge.userInput).toEqual(26);
+    expect(newAge.marsAge).toEqual(0);
+  }); 
 })
 
