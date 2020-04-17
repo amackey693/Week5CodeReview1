@@ -12,9 +12,9 @@ describe ("Mercury", () => {
   }); 
 
   test ('Mercury method mercuryCalc() returns proper age in mercury years based off of the users inputted age', () => {
-    let newAge = new Mercury();
+    let newAge = new Mercury(26);
     newAge.mercuryCalc();
-    expect(newAge.mercuryAge).toEqual()
+    expect(newAge.mercuryAge).toEqual(107.840909)
   });
 })
 
