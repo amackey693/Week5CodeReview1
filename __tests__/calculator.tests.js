@@ -54,10 +54,10 @@ describe ("Age", () => {
     newAge.marsCalc();
     newAge.jupiterCalc();
 
-    expect(newAge.mercuryAge).toEqual(null);
-    expect(newAge.venusAge).toEqual(null);
-    expect(newAge.marsAge).toEqual(null);
-    expect(newAge.jupiterAge).toEqual(null);
+    expect(newAge.mercuryAge).toEqual(108);
+    expect(newAge.venusAge).toEqual(42);
+    expect(newAge.marsAge).toEqual(14);
+    expect(newAge.jupiterAge).toEqual(2);
   });
 
   //test for PLANET CALC METHOD (NOT WRITTEN YET)

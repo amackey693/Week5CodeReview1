@@ -15,25 +15,25 @@ export class Age {
 
   mercuryCalc() {
     let num = this.userInput * 365; //number of days in a year
-    let newAge = num/88; //number of days it takes Mercury to orbit the sun
+    let newAge = Math.round(num/88); //number of days it takes Mercury to orbit the sun
     this.mercuryAge = this.mercuryAge + newAge;
   } 
 
   venusCalc() {
     let num = this.userInput * 365; 
-    let newAge = num/225; //number of days it takes Venus to orbit the sun
+    let newAge = Math.round(num/225); //number of days it takes Venus to orbit the sun
     this.venusAge = this.venusAge + newAge;
   }
 
   marsCalc() {
     let num = this.userInput * 365; 
-    let newAge = num/687; //number of days it takes Mars to orbit the sun
+    let newAge = Math.round(num/687); //number of days it takes Mars to orbit the sun
     this.marsAge = this.marsAge + newAge;
   }
 
   jupiterCalc() {
     let num = this.userInput * 365; 
-    let newAge = num/(11.8 * 365); //number of days it takes Jupiter to orbit the sun
+    let newAge = Math.round(num/(11.8 * 365)); //number of days it takes Jupiter to orbit the sun
     this.jupiterAge = this.jupiterAge + newAge;
   }
 }
