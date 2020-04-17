@@ -38,6 +38,6 @@ describe ("Age", () => {
   test ('Add option for "All" to age method planetCalc() that runs and displays all new ages to the user ', () => {
     let newAge = new Age(26);
     newAge.planetCalc("All");
-    expect(newAge.all).toEqual([]);
+    expect(newAge.all).toEqual([108, 42, 14, 2]);
   });
 })
