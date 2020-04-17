@@ -45,7 +45,7 @@ describe ("Age", () => {
   test ('Age method jupiterCalc() returns proper age in jupiter years based off of the users inputted age', () => {
     let newAge = new Age(26);
     newAge.jupiterCalc();
-    expect(newAge.jupiterAge).toBeGreaterThanOrEqual(null);
+    expect(newAge.jupiterAge).toBeGreaterThanOrEqual(2);
   });
 })
 

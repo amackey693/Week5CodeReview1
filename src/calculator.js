@@ -25,4 +25,10 @@ export class Age {
     let newAge = num/687; //number of days it takes Mars to orbit the sun
     this.marsAge = this.marsAge + newAge;
   }
+
+  jupiterCalc() {
+    let num = this.userInput * 365; 
+    let newAge = num/(11.8 * 365); //number of days it takes Jupiter to orbit the sun
+    this.marsAge = this.jupiterAge + newAge;
+  }
 }
