@@ -26,17 +26,16 @@ _This application will take allow the user to input their age and return their "
 
 |   Behavior Description        |  
 |-------------------------------|
-| 1. Allow user to input their age in _years_ []|
-| 2. Create Class, constructor & method for calculating users age in Mercury Years [] | 
-| 3. Returns users age in Mercury Years []|
-| 4.  Create Class, constructor & method for calculating users age in Venus Years [] | 
-| 5. Returns users age in Venus Years []|
-| 4.  Create Class, constructor & method for calculating users age in Mars Years [] | 
-| 5. Returns users age in Mars years []|
-| 6.  Create Class, constructor & method for calculating users age in Jupiter Years [] | 
-| 7. Returns users age in Jupiter years [] |
-| 8. Create method for each planet to determine how many years the user has have left to live on each planet [] |
-| 9. Return the number of years they have lived past their life expectancy []|
+| 1. Allow user to input their age in _years_ [X]|
+| 2. Create Class & constructor for Age  [X]| 
+| 3. Create Method for user to select individual planet to calculate age [X]|
+| 4. Returns users age to them in the nearest whole number [X]|
+| 5. Allows user to select option to calculate their age in Mercury Years & returns new age to them [X]|
+| 6. Allows user to select option to calculate their age in Venus Years & returns new age to them[X]| 
+| 7. Allows user to select option to calculate their age in Mars Years & returns new age to them [X]| 
+| 8. Allows user to select option to calculate their age in Jupiter Years & returns new age to them [X]| 
+| 9. Create method for each planet to determine how many years the user has have left to live on each planet [] |
+| 10. Return the number of years they have lived past their life expectancy []|
 
 ## Known Bugs
 

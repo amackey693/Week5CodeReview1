@@ -3,10 +3,9 @@ export class Age {
   constructor (userInput) {
     this.userInput = userInput;
   }
-  //create one big "planetCalc()" method?? revisit at the end? 
+  
   planetCalc(choice) {
-    let num = this.userInput * 365;
-    
+    let num = this.userInput * 365;   
     if (choice === "Mercury") {
       let newAge = Math.round(num/88); //number of days it takes Mercury to orbit the sun
       this.mercuryAge = newAge;
