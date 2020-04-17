@@ -1,7 +1,7 @@
 // Business Logic 
 class Mercury {
-  constructor () {
+  constructor (userInput) {
     this.userInput = userInput;
-    this.mercuryAge = mercuryAge;
+    this.mercuryAge = 0
   }
 }
