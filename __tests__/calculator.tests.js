@@ -27,14 +27,16 @@ describe ("Age", () => {
   test ('Age method planetCalc() adds all properties to constructor if they are run, otherwise they are not a part of the constructor', () => {
     let newAge = new Age(26);
     newAge.planetCalc("Mercury");
-    newAge.planetCalc("Venus");
-    newAge.planetCalc("Mars");
-    newAge.planetCalc("Jupiter");
-
-    expect(newAge.mercuryAge).toEqual(null);
-    expect(newAge.venusAge).toEqual(null);
-    expect(newAge.marsAge).toEqual(null);
-    expect(newAge.jupiterAge).toEqual(null);
+   
+    expect(newAge.mercuryAge).toEqual(108);
+    expect(newAge.venusAge).toBe(undefined);
+ 
   });
 })
 
+// newAge.planetCalc("Venus");
+// newAge.planetCalc("Mars");
+// newAge.planetCalc("Jupiter");
+// expect(newAge.venusAge).toEqual(42);
+// expect(newAge.marsAge).toEqual(14);
+// expect(newAge.jupiterAge).toEqual(2);

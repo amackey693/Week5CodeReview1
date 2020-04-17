@@ -2,10 +2,6 @@
 export class Age {
   constructor (userInput) {
     this.userInput = userInput;
-    this.mercuryAge = 0;
-    this.venusAge = 0; 
-    this.marsAge = 0;
-    this.jupiterAge = 0;
   }
   //create one big "planetCalc()" method?? revisit at the end? 
   planetCalc(choice) {
@@ -13,19 +9,19 @@ export class Age {
     
     if (choice === "Mercury") {
       let newAge = Math.round(num/88); //number of days it takes Mercury to orbit the sun
-      this.mercuryAge = this.mercuryAge + newAge;
+      this.mercuryAge = newAge;
     } 
     if (choice === "Venus") {
       let newAge = Math.round(num/225); //number of days it takes Venus to orbit the sun
-      this.venusAge = this.venusAge + newAge;
+      this.venusAge = newAge;
     }
     if (choice === "Mars") {
       let newAge = Math.round(num/687); //number of days it takes Mars to orbit the sun
-      this.marsAge = this.marsAge + newAge;
+      this.marsAge = newAge;
     }
     if (choice === "Jupiter") {
       let newAge = Math.round(num/(11.8 * 365)); //number of days it takes Jupiter to orbit the sun
-      this.jupiterAge = this.jupiterAge + newAge;
+      this.jupiterAge = newAge;
     }
   }
 }
