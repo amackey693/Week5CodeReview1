@@ -59,16 +59,14 @@ describe ("Age", () => {
     expect(newAge.marsAge).toEqual(14);
     expect(newAge.jupiterAge).toEqual(2);
   });
-
-  //test for PLANET CALC METHOD (NOT WRITTEN YET)
-  // test ('Age method planetCalc() compiles all other methods to create one large method based off of the user selection', () => {
-  //   let newAge = new Age(26);
-  //   newAge.planetCalc("choice");
-  //   expect(newAge.mercuryAge).toBeGreaterThanOrEqual(null);
-  //   expect(newAge.venusAge).toBeGreaterThanOrEqual(null);
-  //   expect(newAge.marsAge).toBeGreaterThanOrEqual(null);
-  //   expect(newAge.jupiterAge).toBeGreaterThanOrEqual(null);
-  // })
+  test ('Age method planetCalc() compiles all other methods to create one large method based off of the user selection', () => {
+    let newAge = new Age(26);
+    newAge.planetCalc("choice");
+    expect(newAge.mercuryAge).toBeGreaterThanOrEqual(null);
+    expect(newAge.venusAge).toBeGreaterThanOrEqual(null);
+    expect(newAge.marsAge).toBeGreaterThanOrEqual(null);
+    expect(newAge.jupiterAge).toBeGreaterThanOrEqual(null);
+  })
 
 
 })
