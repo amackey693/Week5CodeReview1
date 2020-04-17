@@ -1,5 +1,5 @@
 // Business Logic 
-export class Mercury {
+export class Age {
   constructor (userInput) {
     this.userInput = userInput;
     this.mercuryAge = 0
