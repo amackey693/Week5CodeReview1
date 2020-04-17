@@ -16,23 +16,36 @@ $(document).ready(function(){
     newAge.planetCalc();
 
     if ((userInput === 0 || isNaN(userInput)) || (lifeTerm === 0 || isNaN(lifeTerm)) || (userSelection === " ")) {
-      $("#output").html("<p>Please Complete the form above to get your answer! <p>")
+      $("#output").html("<p>Please Complete the form above to get your answers! <p>")
     } 
-    else if (userSelection === "mercury") {
-      $("#output").html("<p> Your current age on Mercury is: " + newAge.all[0] + "</p>");
-      $("#output").html("<p> You've surpassed your life expectancy by: " + Math.abs(yearsLeft[0]) + " years!</p>");
+    // for Mercury selection
+    if (userSelection === "mercury" && Math.sign(yearsLeft[0] === - 1)) {
+      $("#output").html("<p> Your current age on Mercury is: " + newAge.all[0] + "</p>" + "<p> You've surpassed your life expectancy by: " + Math.abs(yearsLeft[0]) + "years!</p>");
+      $("#output").html();
+    } else if (Math.sign(yearsLeft[0] === 1)) {
+      $("#output").html("<p> Your current age on Mercury is: " + newAge.all[0] + "</p>" + "<p> You still have " + Math.abs(yearsLeft[0]) + " years to live on Mercury!</p>");
     }
-    else if (userSelection === "venus") {
-      $("#output").html("<p> Your current age on Venus is: " + newAge.all[1] + " years old</p>");
-      $("#output").html("<p> You still have " + yearsLeft[1] + " on Venus! </p>");
+    // for Venus selection 
+    if (userSelection === "venus" && Math.sign(yearsLeft[1] === 1 )) {
+      $("#output").html("<p> Your current age on Venus is: " + newAge.all[1] + " years old</p>" + "<p> You still have " + yearsLeft[1] + " on Venus! </p>");
+    } else if (Math.sign(yearsLeft[1] === - 1)) {
+      $("#output").html("<p> Your current age on Venus is: " + newAge.all[1] + " years old</p>" + "<p> You've surpassed your life expectancy by: " + Math.abs(yearsLeft[1]) + "years!</p>");
     }
-    else if (userSelection === "mars") {
-      $("#output").html("<p> Your current age on Mars is: " + newAge.all[2] + " years old</p>");
-      $("#output").html("<p> You still have " + yearsLeft[2] + " years left to on Mars! </p>");
+
+    // for Mars selection 
+    if (userSelection === "mars" && Math.sign(yearsLeft[2] === 1 )) {
+      $("#output").html("<p> Your current age on Venus is: " + newAge.all[2] + " years old</p>");
+      $("#output").html("<p> You still have " + yearsLeft[2] + " on Venus! </p>");
+    } else if (Math.sign(yearsLeft[2] === - 1)) {
+      $("#output").html("<p> Your current age on Venus is: " + newAge.all[2] + " years old</p>" + "<p> You've surpassed your life expectancy by: " + Math.abs(yearsLeft[2]) + "years!</p>");
     }
-    else if (userSelection === "jupiter") {
-      $("#output").html("<p> Your current age on Jupiter is: " + newAge.all[3] + " years old</p>");
-      $("#output").html("<p> You still have " + yearsLeft[3] + " years left to on Mars! </p>");
+
+    if (userSelection === "jupiter" && Math.sign(yearsLeft[3] === 1 )) {
+      $("#output").html("<p> Your current age on Venus is: " + newAge.all[3] + " years old</p>");
+      $("#output").html("<p> You still have " + yearsLeft[3] + " on Venus! </p>");
+    } else if (Math.sign(yearsLeft[3] === - 1)) {
+      $("#output").html("<p> Your current age on Venus is: " + newAge.all[3] + " years old</p>" + "<p> You've surpassed your life expectancy by: " + Math.abs(yearsLeft[3]) + "years!</p>");
     }
+    
   });
 });
