@@ -35,4 +35,8 @@ describe ("Age", () => {
     expect(newAge.marsAge).toEqual(14);
     expect(newAge.jupiterAge).toEqual(2);
   });
+  test ('Add option for "All" to age method planetCalc() that runs and displays all new ages to the user ', () => {
+    let newAge = new Age(26);
+    newAge.planetCalc("All");
+  });
 })
