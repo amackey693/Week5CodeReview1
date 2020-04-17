@@ -29,14 +29,10 @@ describe ("Age", () => {
     newAge.planetCalc("Mercury");
     newAge.planetCalc("Venus");
     newAge.planetCalc("Mars");
+    newAge.planetCalc("Jupiter");
     expect(newAge.mercuryAge).toEqual(108);
     expect(newAge.venusAge).toEqual(42);
     expect(newAge.marsAge).toEqual(14);
-    expect(newAge.jupiterAge).toBe(undefined);
-
-    
-    // newAge.planetCalc("Jupiter");
-    // expect(newAge.jupiterAge).toEqual(2);
-    
+    expect(newAge.jupiterAge).toEqual(2);
   });
 })
