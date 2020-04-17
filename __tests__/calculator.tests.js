@@ -24,8 +24,8 @@ describe ("Age", () => {
   }); 
   test ('Age method venusCalc() returns proper age in venus years based off of the users inputted age', () => {
     let newAge = new Age(26);
-    newAge.venusAge();
-    expect(newAge.venusAge).toBeGreaterThanOrEqual(null);
+    newAge.venusCalc();
+    expect(newAge.venusAge).toBeGreaterThanOrEqual(42);
   });
 })
 

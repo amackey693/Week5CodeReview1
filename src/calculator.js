@@ -18,5 +18,5 @@ export class Age {
     this.venusAge = this.venusAge + newAge;
   }
 
-  
+
 }
