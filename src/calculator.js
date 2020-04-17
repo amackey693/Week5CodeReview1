@@ -29,6 +29,6 @@ export class Age {
   jupiterCalc() {
     let num = this.userInput * 365; 
     let newAge = num/(11.8 * 365); //number of days it takes Jupiter to orbit the sun
-    this.marsAge = this.jupiterAge + newAge;
+    this.jupiterAge = this.jupiterAge + newAge;
   }
 }
