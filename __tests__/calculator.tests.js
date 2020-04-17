@@ -37,5 +37,10 @@ describe ("Age", () => {
     newAge.marsCalc();
     expect(newAge.marsAge).toBeGreaterThanOrEqual(13);
   });
+  test ('Age constructor holds values for UserInput and confirms new property jupiterAge is set to zero', () => {
+    let newAge = new Age (26);
+    expect(newAge.userInput).toEqual(26);
+    expect(newAge.jupiterAge).toEqual(0);
+  }); 
 })
 
