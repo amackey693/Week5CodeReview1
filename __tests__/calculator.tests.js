@@ -11,6 +11,10 @@ describe ("Mercury", () => {
     expect(newAge.mercuryAge).toEqual(0);
   }); 
 
-
-});
+  test ('Mercury method mercuryCalc() returns proper age in mercury years based off of the users inputted age', () => {
+    let newAge = new Mercury();
+    newAge.mercuryCalc();
+    expect(newAge.mercuryAge).toEqual()
+  });
+})
 

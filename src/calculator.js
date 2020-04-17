@@ -4,4 +4,5 @@ export class Mercury {
     this.userInput = userInput;
     this.mercuryAge = 0
   }
+  
 }
