@@ -15,9 +15,13 @@ export class Age {
 
   venusCalc() {
     let num = this.userInput * 365; 
-    let newAge = num/225; //number of days it takes Mercury to orbit the sun
+    let newAge = num/225; //number of days it takes Venus to orbit the sun
     this.venusAge = this.venusAge + newAge;
   }
 
-
+  marsCalc() {
+    let num = this.userInput * 365; 
+    let newAge = num/687; //number of days it takes Mars to orbit the sun
+    this.marsAge = this.marsAge + newAge;
+  }
 }

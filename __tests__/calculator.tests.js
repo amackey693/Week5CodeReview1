@@ -35,7 +35,7 @@ describe ("Age", () => {
   test ('Age method marsCalc() returns proper age in mars years based off of the users inputted age', () => {
     let newAge = new Age(26);
     newAge.marsCalc();
-    expect(newAge.marsAge).toBeGreaterThanOrEqual(null);
+    expect(newAge.marsAge).toBeGreaterThanOrEqual(13);
   });
 })
 
