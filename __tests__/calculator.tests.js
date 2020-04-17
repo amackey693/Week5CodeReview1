@@ -3,7 +3,7 @@
 import { Age } from "./../src/calculator"
 
 
-// TESTS FOR MERCURY AGE CALCULATOR 
+// TESTS FOR AGE CALCULATOR 
 describe ("Age", () => {
   test ('Age constructor holds values for UserInput and mercuryAge is set to zero', () => {
     let newAge = new Age (26);
@@ -22,5 +22,10 @@ describe ("Age", () => {
     expect(newAge.mercuryAge).toEqual(0);
     expect(newAge.venusAge).toEqual(0);
   }); 
+  test ('Age method venusCalc() returns proper age in venus years based off of the users inputted age', () => {
+    let newAge = new Age(26);
+    newAge.venusAge();
+    expect(newAge.venusAge).toBeGreaterThanOrEqual(null);
+  });
 })
 
