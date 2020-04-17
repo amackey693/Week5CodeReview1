@@ -4,6 +4,7 @@ export class Age {
     this.userInput = userInput;
     this.mercuryAge = 0;
     this.venusAge = 0; 
+    this.marsAage = 0;
   }
   //create one big "planetCalc()" method?? revisit at the end? 
   mercuryCalc() {
