@@ -1,6 +1,6 @@
 //for Testing Business Logic 
 
-import { Mercury } from "./../src/calculator"
+import { Age } from "./../src/calculator"
 
 
 // TESTS FOR MERCURY AGE CALCULATOR 
