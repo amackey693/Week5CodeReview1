@@ -40,4 +40,9 @@ describe ("Age", () => {
     newAge.planetCalc("All");
     expect(newAge.all).toEqual([108, 42, 14, 2]);
   });
+  test ('Add new method yearsToLive() to Age class to determine how many years the user has to live on each planet', () => {
+    let newAge = new Age(26);
+    newAge.yearsToLive();
+    expect(newAge.yearsLeft).toEqual(null);
+  });
 })

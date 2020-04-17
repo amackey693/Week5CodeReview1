@@ -27,5 +27,6 @@ export class Age {
       this.jupiterAge =  Math.round(num/(11.8 * 365)); 
     }
   }
+  
 }
    // this.all = ["Mercury Age: " + mercury + ",", "Venus Age: " + venus + ",", "Mars Age: " + mars + ",", "Jupiter Age: "+ jupiter +"."]
