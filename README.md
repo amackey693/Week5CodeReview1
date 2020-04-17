@@ -34,7 +34,7 @@ _This application will take allow the user to input their age and return their "
 | 6. Allows user to select option to calculate their age in Venus Years & returns new age to them[X]| 
 | 7. Allows user to select option to calculate their age in Mars Years & returns new age to them [X]| 
 | 8. Allows user to select option to calculate their age in Jupiter Years & returns new age to them [X]| 
-| 9. Create method for each planet to determine how many years the user has have left to live on each planet [] |
+| 9. Create method for each planet to determine how many years the user has have left to live on each planet [X] |
 | 10. Return the number of years they have lived past their life expectancy []|
 
 ## Known Bugs
