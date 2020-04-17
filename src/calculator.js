@@ -18,5 +18,7 @@ export class Age {
     
     this.all = [mercury, venus, mars, jupiter];
     this.yearsLeft = [num1-mercury, num1-venus, num1-mars, num1-jupiter];
+
+    
   }
 }

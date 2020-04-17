@@ -20,4 +20,5 @@ describe ("Age", () => {
     newAge.planetCalc();
     expect(newAge.yearsLeft).toEqual([-22, 44, 72, 84]);
   });
+  
 })
