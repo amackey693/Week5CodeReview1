@@ -2,8 +2,8 @@
 export class Age {
   constructor (userInput) {
     this.userInput = userInput;
-    this.mercuryAge = 0
-    
+    this.mercuryAge = 0;
+    this.venusAge = 0; 
   }
 
   mercuryCalc() {
