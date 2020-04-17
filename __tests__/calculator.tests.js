@@ -7,9 +7,9 @@ import { Mercury } from "./../src/calculator"
 describe ("Mercury", () => {
   test ('Mercury constructor holds values for UserInput and Mercury Age is set to zero', () => {
     let newAge = new Mercury (26);
-    expect(newAge.userInput)
+    expect(newAge.userInput).toEqual(26);
+    expect(newAge.mercuryAge).toEqual(0);
   }); 
-
 
 
 });
