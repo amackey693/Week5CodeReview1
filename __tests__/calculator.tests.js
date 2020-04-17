@@ -47,5 +47,29 @@ describe ("Age", () => {
     newAge.jupiterCalc();
     expect(newAge.jupiterAge).toBeGreaterThanOrEqual(2);
   });
+  test ('All age methods will return the age rounded to the nearest whole number ', () => {
+    let newAge = new Age(26);
+    newAge.mercuryCalc();
+    newAge.venusCalc();
+    newAge.marsCalc();
+    newAge.jupiterCalc();
+
+    expect(newAge.mercuryAge).toEqual(null);
+    expect(newAge.venusAge).toEqual(null);
+    expect(newAge.marsAge).toEqual(null);
+    expect(newAge.jupiterAge).toEqual(null);
+  });
+
+  //test for PLANET CALC METHOD (NOT WRITTEN YET)
+  // test ('Age method planetCalc() compiles all other methods to create one large method based off of the user selection', () => {
+  //   let newAge = new Age(26);
+  //   newAge.planetCalc("choice");
+  //   expect(newAge.mercuryAge).toBeGreaterThanOrEqual(null);
+  //   expect(newAge.venusAge).toBeGreaterThanOrEqual(null);
+  //   expect(newAge.marsAge).toBeGreaterThanOrEqual(null);
+  //   expect(newAge.jupiterAge).toBeGreaterThanOrEqual(null);
+  // })
+
+
 })
 

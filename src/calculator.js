@@ -8,6 +8,11 @@ export class Age {
     this.jupiterAge = 0;
   }
   //create one big "planetCalc()" method?? revisit at the end? 
+  // planetCalc() {
+  //   let num = this.userInput * 365;
+    
+  // }
+
   mercuryCalc() {
     let num = this.userInput * 365; //number of days in a year
     let newAge = num/88; //number of days it takes Mercury to orbit the sun
