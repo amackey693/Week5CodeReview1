@@ -28,6 +28,7 @@ export class Age {
       this.jupiterAge = this.jupiterAge + newAge;
     }
   }
+}
 
   // mercuryCalc() {
   //   let num = this.userInput * 365; //number of days in a year
@@ -52,4 +53,3 @@ export class Age {
 //     let newAge = Math.round(num/(11.8 * 365)); //number of days it takes Jupiter to orbit the sun
 //     this.jupiterAge = this.jupiterAge + newAge;
 //   }
-// }
